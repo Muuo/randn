@@ -16,56 +16,76 @@ func TestLookup(t *testing.T) {
 	t.Log(Lookup(3))
 	t.Log(Lookup(4))
 	t.Log(Lookup(5))
+	t.Log(Lookup(6))
+	t.Log(Lookup(7))
+	t.Log(Lookup(8))
+	t.Log(Lookup(9))
+	t.Log(Lookup(10))
 }
 
 func TestBLookup(t *testing.T) {
-	t.Log(BLookup(1))
-	t.Log(BLookup(2))
-	t.Log(BLookup(3))
-	t.Log(BLookup(4))
-	t.Log(BLookup(5))
+	t.Log(Lookup(1))
+	t.Log(Lookup(2))
+	t.Log(Lookup(3))
+	t.Log(Lookup(4))
+	t.Log(Lookup(5))
+	t.Log(Lookup(6))
+	t.Log(Lookup(7))
+	t.Log(Lookup(8))
+	t.Log(Lookup(9))
+	t.Log(Lookup(10))
 }
 
 func TestALookup(t *testing.T) {
-	t.Log(ALookup(1))
-	t.Log(ALookup(2))
-	t.Log(ALookup(3))
-	t.Log(ALookup(4))
-	t.Log(ALookup(5))
+	t.Log(Lookup(1))
+	t.Log(Lookup(2))
+	t.Log(Lookup(3))
+	t.Log(Lookup(4))
+	t.Log(Lookup(5))
+	t.Log(Lookup(6))
+	t.Log(Lookup(7))
+	t.Log(Lookup(8))
+	t.Log(Lookup(9))
+	t.Log(Lookup(10))
 }
 
 func TestAALookup(t *testing.T) {
-	t.Log(AALookup(1))
-	t.Log(AALookup(2))
-	t.Log(AALookup(3))
-	t.Log(AALookup(4))
-	t.Log(AALookup(5))
+	t.Log(Lookup(1))
+	t.Log(Lookup(2))
+	t.Log(Lookup(3))
+	t.Log(Lookup(4))
+	t.Log(Lookup(5))
+	t.Log(Lookup(6))
+	t.Log(Lookup(7))
+	t.Log(Lookup(8))
+	t.Log(Lookup(9))
+	t.Log(Lookup(10))
 }
 
 func BenchmarkLookup(b *testing.B) {
 	// run the Lookup function b.N times
 	for i := 0; i < b.N; i++ {
-		Lookup(5)
+		Lookup(10)
 	}
 }
 
 func BenchmarkBLookup(b *testing.B) {
 	// run the Lookup function b.N times
 	for i := 0; i < b.N; i++ {
-		BLookup(5)
+		BLookup(10)
 	}
 }
 
 func BenchmarkALookup(b *testing.B) {
 	// run the Lookup function b.N times
 	for i := 0; i < b.N; i++ {
-		ALookup(5)
+		ALookup(10)
 	}
 }
 
 func BenchmarkAALookup(b *testing.B) {
 	// run the Lookup function b.N times
 	for i := 0; i < b.N; i++ {
-		AALookup(5)
+		AALookup(10)
 	}
 }
